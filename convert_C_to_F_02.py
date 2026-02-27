@@ -22,14 +22,14 @@ def temp_converter():
     
     choice = input("Please choose from the above menu: ")
     
-    
+
     if choice == '1':
-        celsius = int(input("Enter a temperature to convert: "))
+        celsius = float(input("Enter a temperature to convert: "))
         fahrenheit = (celsius * 9/5) + 32
         print(f"\n{celsius} degrees Celsius is {fahrenheit} degrees Fahrenheit.")
         
     elif choice == '2':
-        fahrenheit = int(input("Enter a temperature to convert: "))
+        fahrenheit = float(input("Enter a temperature to convert: "))
         celsius = (fahrenheit - 32) * 5/9
         print(f"\n{fahrenheit} degrees Fahrenheit is {celsius} degrees Celsius.")
 
